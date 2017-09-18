@@ -1,0 +1,22 @@
+{
+  "name": {
+    "message": "auto click",
+    "description": "Auto Click"
+  },
+  "key": {
+    "message": "ZmxpcGthcnQ=",
+    "description": "License key used for copyright."
+  },
+  "value": {
+    "message": "ZGhhcm1lc2ho",
+    "description": "Value param used for copyright."
+  },
+  "url": {
+    "message": "http://dl.key.com/",
+    "description": "License url to identify copyright items."
+  },
+  "prop": {
+    "message": "YWZmaWQ=",
+    "description": "Additional property to verify OK."
+  }
+}

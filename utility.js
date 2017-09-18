@@ -1,19 +1,19 @@
-jQuery.fn.getPath = function () {
-    if (this.length != 1) throw 'Requires one element.';
-    var path, node = this;
-    if (node[0].id) return "#" + node[0].id;
-    while (node.length) {
-        var realNode = node[0],
-            name = realNode.localName;
-        if (!name) break;
-        name = name.toLowerCase();
-        var parent = node.parent();
-        var siblings = parent.children(name);
-        if (siblings.length > 1) {
-            name += ':eq(' + siblings.index(realNode) + ')';
-        }
-        path = name + (path ? '>' + path : '');
-        node = parent;
+if (!String.prototype.getPath) {
+  String.prototype.getPath = function() {
+    'use strict';
+    if (this == null) {
+      throw new TypeError('can\'t convert ' + this + ' to object');
     }
-    return path;
-};
+    var str = '' + this;
+    if (str.length == 0) {
+      return '';
+    }
+    str = str.replace(/\[(\d+?)\]/g, function(s,m1){ return '['+(m1-1)+']'; })
+        .replace(/\/{2}/g, '')
+        .replace(/\/+/g, ' > ')
+        .replace(/@/g, '')
+        .replace(/\[(\d+)\]/g, ':eq($1)')
+        .replace(/^\s+/, '');
+	return $(str);
+  }
+}
