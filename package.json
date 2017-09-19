@@ -5,9 +5,7 @@
   "main": "auto.click.js",
   "scripts": {
     "test": "karma start",
-    "build": "webpack --config webpack.prod.js",
-    "start": "webpack-dev-server --open --config webpack.dev.js",
-    "webpack": "webpack"
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",

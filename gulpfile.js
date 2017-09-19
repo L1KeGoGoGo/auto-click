@@ -47,10 +47,10 @@ function node() {
 
   return gulp.src(paths.assets.src)
     .pipe(jsFilter)
-    .pipe(gulp.dest(paths.assets.dest + "/js"))
+    .pipe(gulp.dest(paths.assets.dest + "/scripts"))
     .pipe(jsFilter.restore)
     .pipe(cssFilter)
-    .pipe(gulp.dest(paths.assets.dest + "/css"))
+    .pipe(gulp.dest(paths.assets.dest + "/styles"))
     .pipe(cssFilter.restore);
 }
 
