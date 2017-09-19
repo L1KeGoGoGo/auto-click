@@ -1,0 +1,43 @@
+{
+  "name": "auto-click",
+  "version": "1.0.0",
+  "description": "auto click chrome extenion",
+  "main": "auto.click.js",
+  "scripts": {
+    "test": "karma start",
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dhruv-Techapps/auto-click.git"
+  },
+  "keywords": [
+    "auto",
+    "click",
+    "auto",
+    "click",
+    "chrome",
+    "extension"
+  ],
+  "author": "Dhruv",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Dhruv-Techapps/auto-click/issues"
+  },
+  "homepage": "https://github.com/Dhruv-Techapps/auto-click#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-debug": "^3.1.0",
+    "gulp-filter": "^5.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "jquery": "^3.2.1"
+  }
+}

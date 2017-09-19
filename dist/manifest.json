@@ -1,34 +1,37 @@
 {
-  "name": "Auto Click [beta	]",
+  "name": "Auto Click [beta]",
   "short_name": "Auto Click",
   "version": "1.1",
   "manifest_version": 2,
   "description": "Auto click like a PRO :) [Donate to Support]",
-  "default_locale": "en",
   "permissions": [
     "storage",
-	"notifications",
-	"contextMenus",
-	"bookmarks"
+    "notifications",
+    "contextMenus",
+    "bookmarks"
   ],
-  "icons": { 
-    "16": "icon_16.png",
-    "48": "icon_48.png",
-    "128": "icon_128.png"
+  "icons": {
+    "32": "assets/icons/icon_32.png",
+    "48": "assets/icons/icon_48.png",
+    "128": "assets/icons/icon_128.png"
   },
   "browser_action": {
-    "default_icon": "icon_32.png"
+    "default_icon": "assets/icons/icon_32.png"
   },
   "background": {
-    "scripts": ["background.js"]
+    "scripts": [
+      "background.js"
+    ]
   },
   "content_scripts": [
     {
-      "matches" : [
+      "matches": [
         "http://*/*",
         "https://*/*"
       ],
-      "js": ["jquery-3.1.1.min.js","utility.js","auto.click.js"],
+      "js": [
+        "index.js"
+      ],
       "run_at": "document_end"
     }
   ],

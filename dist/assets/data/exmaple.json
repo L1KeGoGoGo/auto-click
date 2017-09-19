@@ -1,0 +1,18 @@
+[
+    {
+        "url": "https://dhruv-techapps.github.io/Auto-Click/test.html",
+        "check": "https://dhruv-techapps.github.io/Auto-Click/test.html",
+        "xpath": "//*[@id='button]",
+        "interval": "1",
+        "count": "100",
+        "input": "keyup"
+    },
+    {
+        "url": "https://dhruv-techapps.github.io/Auto-Click/test.html",
+        "check": "https://dhruv-techapps.github.io/Auto-Click/test.html",
+        "xpath": "//*[@id='test]/div[2]/a[2]",
+        "interval": "2",
+        "count": "50",
+        "input": "keyup"
+    }
+]

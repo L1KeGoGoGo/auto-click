@@ -1,0 +1,8 @@
+assets/*
+coverage/*
+src/*
+test/*
+.gitignore
+.npmignore
+karma.config.js
+webpack.*
