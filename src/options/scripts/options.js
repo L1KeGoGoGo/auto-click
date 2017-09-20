@@ -65,6 +65,9 @@ page.find('input[type=checkbox]').each(function () {
 page.on('keyup', 'input[type]', function () {
     var key = $(this).attr('name');
     localStorage[key] = $(this).val();
+    if(key.indexOf('url') !== -1){
+        $(this).parents("tr").find("td a").attr("href", localStorage[key])
+    }
 });
 for (var k in localStorage) {
     if (k.match(/^(url|xpath|interval|count)-(\d+)/)) {

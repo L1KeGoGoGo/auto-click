@@ -84,12 +84,14 @@ function styles() {
 }
 
 function scripts() {
-  return gulp.src(paths.scripts.src, { sourcemaps: true })
-    .pipe(uglify())
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(gulp.dest(paths.scripts.dest));
+  let gulpObj = gulp.src(paths.scripts.src, { sourcemaps: true })
+  if (process.argv[3] === '--prod') {
+    gulpObj.pipe(process.argv[3] && uglify())
+  }
+  gulpObj.pipe(rename({
+    suffix: '.min'
+  })).pipe(gulp.dest(paths.scripts.dest));
+  return gulpObj;
 }
 
 function watch() {
