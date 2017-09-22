@@ -31,7 +31,6 @@
       ],
       "js": [
         "assets/scripts/jquery.slim.min.js",
-        "scripts/content/utility.min.js",
         "scripts/content/auto.click.min.js"
       ],
       "run_at": "document_end"

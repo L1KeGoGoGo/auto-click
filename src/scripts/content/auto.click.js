@@ -26,15 +26,12 @@ function click(q) {
   if (q[q["id"] + "tempCount"] > 0) {
     q[q["id"] + "tempCount"] = parseInt(q[q["id"] + "tempCount"]) - 1;
 
-    var nodes = document.evaluate(q['xpath'], documentNode, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);
-    console.log("nodes"+nodes);
+    var i = 0, nodes = document.evaluate(q['xpath'], document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
     if (nodes !== null) {
-      console.log(nodes); 
-    }
-
-    if (q['xpath'].getPath().length != 0) {
       retry = 5;
-      q['xpath'].getPath()[0].click();
+      while (i < nodes.snapshotLength) {
+        nodes.snapshotItem(i++).click();
+      }
       setTimeout(function () {
         click(q);
       }, q['interval'] * 1000);

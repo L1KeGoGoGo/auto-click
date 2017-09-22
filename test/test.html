@@ -106,11 +106,14 @@
         vertical-align: middle;
         margin-right: -0.25em;
     }
+    .click{
+        cursor: pointer;
+    }
 
     body {
         display: inline-block;
         vertical-align: middle;
-        max-width: 60rem;
+        max-width: 80rem;
     }
 
     .site__header {
@@ -188,44 +191,60 @@
         border: 1px solid #c0c8c9;
     }
 
-    input[ck="1"]:checked {
+    .gradient>span {
+        float: left;
+        padding: 6px;
+        margin-bottom: 10px;
+    }
+
+    .gradient>span:nth-child(1) {
         background-color: #E8EAF6;
+        color:rgba(0,0,0,.87);
     }
 
-    input[ck="2"]:checked {
+    .gradient>span:nth-child(2) {
         background-color: #C5CAE9;
+        color:rgba(0,0,0,.87);
     }
 
-    input[ck="3"]:checked {
+    .gradient>span:nth-child(3) {
         background-color: #9FA8DA;
+        color:rgba(0,0,0,.87);
     }
 
-    input[ck="4"]:checked {
+    .gradient>span:nth-child(4) {
         background-color: #7986CB;
+        color:rgba(255,255,255,.87);
     }
 
-    input[ck="5"]:checked {
+    .gradient>span:nth-child(5) {
         background-color: #5C6BC0;
+        color:rgba(255,255,255,.87);
     }
 
-    input[ck="6"]:checked {
+    .gradient>span:nth-child(6) {
         background-color: #3F51B5;
+        color:rgba(255,255,255,.87);
     }
 
-    input[ck="7"]:checked {
+    .gradient>span:nth-child(7) {
         background-color: #3949AB;
+        color:rgba(255,255,255,.87);
     }
 
-    input[ck="8"]:checked {
+    .gradient>span:nth-child(8) {
         background-color: #303F9F;
+        color:rgba(255,255,255,.87);
     }
 
-    input[ck="9"]:checked {
+    .gradient>span:nth-child(9) {
         background-color: #283593;
+        color:rgba(255,255,255,.87);
     }
 
-    input[ck="10"]:checked {
+    .gradient>span:nth-child(10) {
         background-color: #1A237E;
+        color:rgba(255,255,255,.87);
     }
 
     input[rd="10"]:checked {
@@ -247,18 +266,21 @@
         <div id="test">
             <div>
                 <button type="button" badge="btn1" class="site__content_left butt js--triggerAnimation click" id="button">I'M BUTTON WITH ID<span class="badge" for="btn1">0</span></button>
-                <button type="button" badge="btn2" class="site__content_right butt js--triggerAnimation click">I'M BUTTON WITHOUT ID<span class="badge" for="btn2">0</span></button>
+                <a href="#" badge="link1" class="site__content_right butt js--triggerAnimation click">I'M FIRST LINK<span class="badge" for="link1">0</span></a>
+                <a href="#" badge="link2" class="site__content_right butt js--triggerAnimation click">I'M SECOND LINK<span class="badge" for="link2">0</span></a>
+                <button type="button" badge="btn2" class="site__content_left butt js--triggerAnimation click">I'M BUTTON WITHOUT ID<span class="badge" for="btn2">0</span></button>
             </div>
-            <div>
-                <a href="#" badge="link1" class="butt js--triggerAnimation click">I'M FIRST LINK<span class="badge" for="link1">0</span></a>
-                <a href="#" badge="link2" class="butt js--triggerAnimation click">I'M SECOND LINK<span class="badge" for="link2">0</span></a>
-            </div>
-            <div>
-                <span class="site__content_left butt js--triggerAnimation click" badge="xid1" xid="1">xid1<span class="badge" for="xid1">0</span></span>
-                <span class="site__content_left butt js--triggerAnimation click" badge="xid2" xid="2">xid2<span class="badge" for="xid2">0</span></span>
-                <span class="site__content_left butt js--triggerAnimation click" badge="xid3" xid="3">xid3<span class="badge" for="xid3">0</span></span>
-                <span class="site__content_left butt js--triggerAnimation click" badge="xid4" xid="4">xid4<span class="badge" for="xid4">0</span></span>
-                <span class="site__content_left butt js--triggerAnimation click" badge="xid5" xid="5">xid5<span class="badge" for="xid5">0</span></span>
+            <div class="gradient">
+                <span class="site__content_left js--triggerAnimation click" badge="xid1" xid="1">xid=1<span class="badge" for="xid1">0</span></span>
+                <span class="site__content_left js--triggerAnimation click" badge="xid2" xid="2">xid=2<span class="badge" for="xid2">0</span></span>
+                <span class="site__content_left js--triggerAnimation click" badge="xid3" xid="3">xid=3<span class="badge" for="xid3">0</span></span>
+                <span class="site__content_left js--triggerAnimation click" badge="xid4" xid="4">xid=4<span class="badge" for="xid4">0</span></span>
+                <span class="site__content_left js--triggerAnimation click" badge="xid5" xid="5">xid=5<span class="badge" for="xid5">0</span></span>
+                <span class="site__content_left js--triggerAnimation click" badge="xid6" xid="6">xid=6<span class="badge" for="xid6">0</span></span>
+                <span class="site__content_left js--triggerAnimation click" badge="xid7" xid="7">xid=7<span class="badge" for="xid7">0</span></span>
+                <span class="site__content_left js--triggerAnimation click" badge="xid8" xid="8">xid=8<span class="badge" for="xid8">0</span></span>
+                <span class="site__content_left js--triggerAnimation click" badge="xid9" xid="9">xid=9<span class="badge" for="xid9">0</span></span>
+                <span class="site__content_left js--triggerAnimation click" badge="xid10" xid="10">xid=10<span class="badge" for="xid10">0</span></span>
             </div>
             <div class="butt js--triggerAnimation" style="display:table">
                 <div style="display:table-row">
