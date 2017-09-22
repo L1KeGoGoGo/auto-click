@@ -8,6 +8,7 @@ if (!String.prototype.getPath) {
     if (str.length == 0) {
       return '';
     }
+    
     str = str.replace(/\[(\d+?)\]/g, function (s, m1) { return '[' + (m1 - 1) + ']'; })
       .replace(/\/{2}/g, '')
       .replace(/\/+/g, ' > ')

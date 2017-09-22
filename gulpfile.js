@@ -102,6 +102,7 @@ function watch() {
 exports.html = html;
 exports.styles = styles;
 exports.scripts = scripts;
+exports.watch = watch;
 /*
  * Specify if tasks run in series or parallel using `gulp.series` and `gulp.parallel`
  */
