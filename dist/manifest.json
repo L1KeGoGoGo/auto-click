@@ -1,7 +1,7 @@
 {
-  "name": "Auto Click [beta]",
+  "name": "Auto Click",
   "short_name": "Auto Click",
-  "version": "1.1",
+  "version": "1.2.0",
   "manifest_version": 2,
   "description": "Auto click like a PRO :) [Donate to Support]",
   "permissions": [
@@ -30,7 +30,6 @@
         "https://*/*"
       ],
       "js": [
-        "assets/scripts/jquery.slim.min.js",
         "scripts/content/auto.click.min.js"
       ],
       "run_at": "document_end"
